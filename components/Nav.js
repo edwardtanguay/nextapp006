@@ -12,6 +12,10 @@ export const Nav = () => {
             </span>
             <span className="separator">|</span>
             <span>
+                <NavLink href="/tech-items">Tech Items</NavLink>
+            </span>
+            <span className="separator">|</span>
+            <span>
                 <NavLink href="/about">About</NavLink>
             </span>
         </nav>

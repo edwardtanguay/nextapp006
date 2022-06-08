@@ -14,7 +14,7 @@ export async function getStaticProps() {
         props: {
             members
         },
-		revalidate: 600
+        revalidate: 600
     };
 }
 
@@ -32,7 +32,10 @@ export async function getStaticPaths() {
 const Members = ({ members }) => {
     const router = useRouter();
     const id = router.query['id'];
-    const member = members.find((m) => m.employeeID === Number(id));
+    let member = {};
+    if (members !== undefined) {
+        member = members.find((m) => m.employeeID === Number(id));
+    }
     const paths = members.map((m) => ({ id: String(m.employeeID) }));
     console.log('paths', paths);
     return (

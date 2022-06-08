@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { DynamicHead } from '../components/DynamicHeader';
 import styles from '../styles/Home.module.css';
 import { SiteHeader } from '../components/SiteHeader';
 import { Nav } from '../components/Nav';
@@ -6,11 +6,7 @@ import { Nav } from '../components/Nav';
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>Tech Resources</title>
-                <meta name="description" content="Tech Resource Site" />
-                <link rel="icon" href="/globe.ico" />
-            </Head>
+        	<DynamicHead/>
             <SiteHeader />
             <Nav />
             <p>Welcome to this site.</p>

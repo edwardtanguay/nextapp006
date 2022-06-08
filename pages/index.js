@@ -1,4 +1,4 @@
-import { DynamicHead } from '../components/DynamicHeader';
+import { DynamicHead } from '../components/DynamicHead';
 import styles from '../styles/Home.module.css';
 import { SiteHeader } from '../components/SiteHeader';
 import { Nav } from '../components/Nav';

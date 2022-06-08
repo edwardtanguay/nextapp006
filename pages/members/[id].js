@@ -33,11 +33,11 @@ const Members = ({ members }) => {
     const router = useRouter();
     const id = router.query['id'];
     let member = {};
+	let paths = [];
     if (members !== undefined) {
         member = members.find((m) => m.employeeID === Number(id));
+    	paths = members.map((m) => ({ id: String(m.employeeID) }));
     }
-    const paths = members.map((m) => ({ id: String(m.employeeID) }));
-    console.log('paths', paths);
     return (
         <div className="page_member">
             <DynamicHead />

@@ -23,7 +23,7 @@ const handleClickMember = (member) => {
 export default function Members({ members }) {
 	return (
 		<div className="page_members">
-			<DynamicHead title="Members" icon="user.ico" />
+			<DynamicHead title="Members" description="People who make the tech resource site run." icon="user.ico" />
 			<SiteHeader />
 			<Nav />
 			<code>

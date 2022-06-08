@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
 import { DynamicHead } from '../components/DynamicHead';
 import styles from '../styles/Home.module.css';
 import { SiteHeader } from '../components/SiteHeader';
@@ -10,7 +12,7 @@ export default function Home() {
             <SiteHeader />
             <Nav />
             <p>Welcome to this site.</p>
-            <p className={styles.highlight}>More changes coming soon...</p>
+        <img src="images/screenWithCode.jpg"/>
         </>
     );
 }
